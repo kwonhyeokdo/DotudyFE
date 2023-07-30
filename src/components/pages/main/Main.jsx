@@ -5,7 +5,7 @@ import Content2 from "./contents/Content2";
 
 /**
  * @description <br/>
- * - '/' url에 대응하는 main 페이지.
+ * - url: "/"
  * - n개의 content를 갖는다.
  * @type <br/>
  * Self Closing Tags

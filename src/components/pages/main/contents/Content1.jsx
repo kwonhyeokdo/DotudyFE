@@ -4,6 +4,7 @@ import TouchRipple from '@mui/material/ButtonBase/TouchRipple';
 
 import wallpaper from 'assets/img/pages/main/wallpaper1.webp';
 import FullBox from 'components/parts/FullBox';
+import Language from 'components/parts/Language';
 
 /**
  * @description <br/>
@@ -65,7 +66,7 @@ const Content1 = forwardRef((props, propScrollRef) => {
                     variant="h1"
                     sx={{fontWeight: 600}}
                 >
-                    공부는 환경입니다
+                    <Language code="main.content1.text2">공부는 환경입니다</Language>
                 </Typography>
                 <Typography
                     color="#efefef"
@@ -74,7 +75,7 @@ const Content1 = forwardRef((props, propScrollRef) => {
                     }}
                     variant="h3"
                 >
-                    도터디에서 여러 학습 환경을 경험해보세요
+                    <Language code="main.content1.text1">도터디에서 여러 학습 환경을 경험해보세요</Language>
                 </Typography>
                 <Button
                     ref={buttonRef}

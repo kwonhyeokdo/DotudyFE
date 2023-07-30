@@ -1,4 +1,5 @@
 import { Box } from '@mui/material';
+import useImageLoaded from 'hooks/useImageLoaded';
 import React, { forwardRef } from 'react';
 
 /**
@@ -13,10 +14,12 @@ import React, { forwardRef } from 'react';
  */
 
 const FullBox = forwardRef(({background, children}, ref) => {
+    const backgroundLoaded = useImageLoaded(background);
+
     const styles = {
         wallpaper: {
             backgroundSize: `cover`,
-            backgroundImage: `url(${background})`,
+            backgroundImage: `url(${backgroundLoaded || "none"})`,
             backgroundPosition: "center"
         }
     };
